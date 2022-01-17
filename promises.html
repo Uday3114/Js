@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let promise1 = new Promise((resolve,reject)=>{
+            resolve("Welcome to promises!!!");
+        });
+
+        promise1.then((proRes)=>{
+            document.write(proRes)
+        },
+        (errRes)=>{
+            document.write(errRes);
+        });
+    </script>
+    <script>
+         let promise2 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("Hello!!!");
+            },5000);
+        });
+
+        promise2.then((Res)=>{
+            document.write(Res)
+        },
+        (errRes)=>{
+            document.write(errRes);
+        });
+    </script> -->
+
+    <!-- <script>
+        let promise3 = new Promise((resolve,reject)=>{
+           setTimeout(()=>
+               resolve("Hello!!!123")
+           ,0);
+       });
+       let promise4 = new Promise((resolve,reject)=>{
+           setTimeout(()=>
+               resolve("Hi!!!")
+           ,1000);
+       });
+       let promise5 = new Promise((resolve,reject)=>{
+           setTimeout(()=>
+               resolve("!!!")
+           ,2000);
+       });
+
+       Promise.all([promise3,promise4,promise5]).then((Res)=>{
+        document.write(Res)
+            },(errRes)=>{
+            document.write(Res)
+            });
+   </script>  -->
+<script>
+    var p1 = new Promise((resolve, reject) => {
+        setTimeout(() => resolve('one'), 1000);
+      });
+      var p2 = new Promise((resolve, reject) => {
+        setTimeout(() => resolve('two'), 2000);
+      });
+      var p3 = new Promise((resolve, reject) => {
+        setTimeout(() => resolve('three'), 3000);
+      });
+      var p4 = new Promise((resolve, reject) => {
+        setTimeout(() => resolve('four'), 4000);
+      });
+      var p5 = new Promise((resolve, reject) => {
+        setTimeout(() => resolve('four'), 5000);
+      });
+      
+      // Using .catch:
+      Promise.all([p1, p2, p3, p4, p5])
+      .then(values => {
+        document.write(values);
+      })
+      .catch(error => {
+        document.write(error.message)
+      });
+</script>
+</body>
+</html>

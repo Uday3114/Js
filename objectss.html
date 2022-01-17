@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            fname:"Uday",
+            lname:"Masani",
+            age:24,
+            eyeColor:"Blue",
+            fullName:function(){
+                return this.fname+" "+this.lname;
+            }};
+        document.write(person.fname+"<br>")
+        document.write(person.lname+"<br>")
+        document.write(person['fname']+"<br>")
+        document.write(person.fullName()+"<br>")
+
+        const Animal = {
+            name:"Dog",
+            breed :"Husky",
+            age:6,
+            eyeColor:"Black",
+            fullName:function(){
+                return this.name+" "+this.breed;
+            }};
+
+        document.write(Animal.name+"<br>")
+        document.write(Animal.breed+"<br>")
+        document.write(Animal.fullName()+"<br>");
+
+        for(key in Animal){
+            document.write(Animal[key]+"<br>");
+        };
+
+
+        let obj = {
+            "frontend":{
+                "sub":"React JS"
+            },
+            "backend":{
+                "sub":"Python"
+            },
+            "database":{
+                "sub":"mysql"
+            }
+        };
+
+        document.write(
+            obj.frontend.sub+"<br>",
+            obj.backend.sub+"<br>",
+            obj.database.sub+"<br>"
+            
+            );
+
+        
+        let obj2 = {"sub_1":"React JS"}
+        let obj3 = {"sub_2":"Python"}
+        let obj4 = {"sub_3":"mysql"}
+        let obj5 = {...obj2,...obj3,...obj4}
+        
+        console.log(obj5);
+
+        let obj6 = {"key_1":"Hello_1"}
+        let obj7 = {...obj6}//deep cloning/copy
+
+        let obj8 = obj7;//shallow cloning/copy
+
+
+        obj6.key_2 = "Hello_2"
+        obj7.key_3 = "Hello_3"
+        obj8.key_1 = "Uday"
+        console.log(obj6)
+        console.log(obj7)
+        console.log(obj8)
+        
+
+        let obj9 = {
+        "sub_1":"React JS",
+        "sub_2":"Python",
+        "sub_3":"mysql",
+        }
+        delete obj9.sub_1;
+        delete obj9.sub_2;
+        console.log(obj9)
+      
+        
+    </script>
+</body>
+</html>

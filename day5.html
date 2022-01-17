@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center; 
+            color:crimson;
+        }
+        h3{
+            text-align: center; 
+            color:#cb7adb;
+        }
+    </style>
+    <script>
+        // function code(){
+        //     let val = document.getElementById('name').value;
+        //     let pnt = document.getElementById('sum').innerHTML = val;
+        //     document.write(`<h1>${pnt}</h1>`)
+        // }
+
+        var flag=true;
+        function disp(){
+            var cform="<form action='Comment'>Enter Name: <br> <input type='text' id='name' placeholder='Enter Name'> <br>Enter Email: <br> <input type='text' id='Email' placeholder='Enter Email'><br>Mention your Comment:<br> <textarea id='comment'> </form>"
+            if(flag){
+                document.getElementById('loc').innerHTML=cform;
+                flag=false;
+            }
+            else{
+                document.getElementById('loc').innerHTML="";
+                flag=true;
+            }
+        }
+
+
+    </script>
+    
+</head>
+<body>
+    <!-- <input type='text'  id= 'name' placeholder="Enter here"/> 
+
+    <button type="submit" value="submit" 
+    onclick="code()" >Click Me</button>
+ 
+    <h3 id='sum'><h3>Write something!!</h3></h3> -->
+
+     <button type="submit" value="submit" onclick="disp()" >Click Me</button>
+     <div id="loc"></div>
+</body>
+</html>

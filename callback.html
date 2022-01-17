@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id = "demo"></p>
+    <script>
+        function disp(some){
+            document.getElementById("demo").innerHTML = some;
+        }
+        function demo(){
+            disp("Good Morning.")
+        }
+
+        function demo2(){
+            disp("Hello! Uday") 
+        }
+        demo();
+        demo2();</script> -->
+       
+        <h3>JS Callback</h3>
+        <p>Wait 3seconds (3000 millisecs) for this page to change </p>
+        <h1 id="demo"></h1>
+        <script>
+            setTimeout(myFun,3000);
+            // setTimeout(myFun(),3000); #wrong
+
+            function myFun(){
+                document.getElementById("demo").innerHTML = "I Love You!!";
+            }
+            
+        
+        </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function disp(){
+            var data=document.getElementById("data").value;
+            if(data.length<=30){
+                document.getElementById("count").innerHTML=data.length;
+            }
+            else{
+                document.getElementById("count").innerHTML='Overflow';
+            }
+        }
+    
+    
+    </script>
+</head>
+<body>
+    <textarea id="data" rows="7" cols="30" onkeyup="disp()"></textarea>
+    <!-- <textarea id="data" rows="7" cols="30" onkeypress="disp()"></textarea> -->
+    <!-- <textarea id="data" rows="7" cols="30" onselect="disp()">http://www.google.com</textarea> -->
+    <span id="count"></span>
+</body>
+</html>
