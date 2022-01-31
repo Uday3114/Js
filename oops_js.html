@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //class Student{
+            //constructor(id,name){
+            //    this.id=id;
+            //    this.name=name;
+            //}display(){
+          //      document.writeln(this.id+" "+this.name+"<br>");
+          //  }
+        //}
+      //  var s1=new Student(100,"Uday");
+      //  var s2=new Student(200,"suraj");
+       // s1.display();
+        //s2.display();  -->
+
+        //stu = {id: 100, name:"uday"};
+        //document.write(stu.id+" - "+stu.name+"<br>")
+        //using new keyword creating object    
+        //var emp = new Object();
+        //emp.sal = 2000;
+        //emp.address = 'Hyderabad';
+        //document.write(emp.sal+" "+emp.address+"<br>");
+        //object with constructor
+        //function display(fno, sno)
+       // {
+         //   this.fno = fno;
+           // this.sno = sno;
+       // }
+        //e = new display(1000, 20000);
+        //document.write(e.fno+" "+e.sno);
+
+        class Student{
+            constructor(){
+                var name;
+                var age;
+
+            }
+            setName(name){
+                this.name=name;
+            }
+            getName(){
+                return this.name;
+            }
+        }
+        var stu1 = new Student();
+        stu1.setName("Uday");
+        document.writeln(stu1.getName())
+    </script>
+</body>
+</html>
